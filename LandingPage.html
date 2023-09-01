@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 120vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://st.automobilemag.com/uploads/sites/11/2017/12/Shelby-GT-500CR-front-three-quarter-01.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 3em;
+            font-style: bold;
+            Letter-spacing: 2px;
+            color: goldenrod;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: blue;
+            padding: 10px 20px;
+            font-size: 30px;
+            position: relative;
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+
+
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid yellow;
+            transition: o.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 90%;
+        }
+
+        .settings a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+
+        }
+
+        .settings a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-txt span {
+            Letter-spacing: 5px;
+            font-size: 30px;
+            color: yellow;
+        }
+
+        .h-txt h1 {
+            font-size: 3cm;
+            color: white;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: red;
+            color: yellow;
+            padding: 10px 20px;
+            Letter-spacing: 5px;
+            transition: 0.4s;
+
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Let's Race </div>
+            <div class="menu">
+                <a href="#">&#x2728 Levels</a>
+                <a href="#">&#x1F30F Events</a>
+                <a href="#">&#x1F381 Shop</a>
+                <a href="#">&#x1F451 Theme</a>
+                <a href="#">&#x1F4AB Coins</a>
+                <a href="#">&#x1F511 Keys</a>
+            </div>
+
+            <div class="settings">
+                <a href="#">Settings</a>
+
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>Be the Champion</span>
+            <h1>Need For Speed</h1>
+
+            <br>
+            <a href="#">Play</a>
+        </section>
+    </header>
+</body>
+
+</html>
